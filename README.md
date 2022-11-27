@@ -6,9 +6,9 @@ An ESP8266 / Arduino based "PID" controller for your coffee machine controlled v
 ## Overview
 
 This project builds on the CoffeePID project by [1024kilobyte](https://1024kilobyte.com). It fully automates a traditaional heat exchanger espresso machine by 
--controlling the boiler via PID and a realay 
--measuring flowrate of coffee with a scale 
--controling the group head solinoid valve via a realy
+- controlling the boiler via PID and a realay 
+- measuring flowrate of coffee with a scale 
+- controling the group head solinoid valve via a realy
 
 ## Hardware Setup
 
