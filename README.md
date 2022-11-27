@@ -6,23 +6,20 @@ An ESP8266 / Arduino based "PID" controller for your coffee machine controlled v
 ## Overview
 
 This project builds on the CoffeePID project by [1024kilobyte](https://1024kilobyte.com). It fully automates a traditaional heat exchanger espresso machine by 
-- controlling the boiler via PID and a realay 
+- controlling the boiler via PID and a relay 
 - measuring flowrate of coffee with a scale 
-- controling the group head solinoid valve via a realy
+- controlling the group head solenoid valve via a relay
 
 ## Hardware Setup
 
-The project contains of 4 main components
 - an ESP8266 microcontroller board (with minor modifications other boards will work also)
-- a MAX31865 breakout board with a PT1000 thermo element
-- a SSR-25DA relay (pin variable "relayPin" in code)
+- 2 MAX31865 breakout boards
+- 2 PT100 RTD elements
+- a SSR-25DA relay
+- a generic [relay module board] (https://www.aliexpress.us/item/2251832463344334.html?spm=a2g0o.order_list.0.0.4cb41802ARtZmn&gatewayAdapt=glo2usa&_randl_shipto=US)
 - a 3,3 V power supply
 
 The MAX31865 is connected via SPI to the ESP8266, the pinout is defined in the header of the arduino file. You can also set the relay pin there.
-
-## Wiring
-
-To integrate CoffeePID you only need 230V for the power supply and replace the thermostat with the SSR. The wiring and placement of the project inside my Gaggia Classic is described in this [blog post](https://1024kilobyte.com/blog/2020/7/22/coffeepid-the-build). If you have a different coffee machine, you will have to adapt the wiring to your make and model. But I hope reading about my journey may help you to do this.
 
 # Setup / Install
 
