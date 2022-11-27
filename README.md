@@ -10,14 +10,17 @@ This project builds on the CoffeePID project by [1024kilobyte](https://1024kilob
 - measuring flowrate of coffee with a scale 
 - controlling the group head solenoid valve via a relay
 
-## Hardware Setup
+## Hardware
 
-- an ESP8266 microcontroller board (with minor modifications other boards will work also)
+- an [ESP8266 microcontroller board](https://www.aliexpress.us/item/3256801450319446.html?spm=a2g0o.order_list.0.0.4cb41802ARtZmn&gatewayAdapt=glo2usa&_randl_shipto=US)
 - 2 MAX31865 breakout boards
 - 2 PT100 RTD elements
 - a SSR-25DA relay
 - a generic [relay module board](https://www.aliexpress.us/item/2251832463344334.html?spm=a2g0o.order_list.0.0.4cb41802ARtZmn&gatewayAdapt=glo2usa&_randl_shipto=US)
-- a 3,3 V power supply
+- an [0.91" OLED display](https://www.aliexpress.us/item/3256804189335493.html?spm=a2g0o.order_list.0.0.4cb41802ARtZmn&gatewayAdapt=glo2usa&_randl_shipto=US)
+- a [1kg load cell with HX711 amp](https://www.aliexpress.us/item/2251832859722659.html?spm=a2g0o.order_list.0.0.4cb41802ARtZmn&gatewayAdapt=glo2usa&_randl_shipto=US)
+- pressure transducers
+- a power supply
 
 The MAX31865 is connected via SPI to the ESP8266, the pinout is defined in the header of the arduino file. You can also set the relay pin there.
 
