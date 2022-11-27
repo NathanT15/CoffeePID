@@ -16,7 +16,7 @@ This project builds on the CoffeePID project by [1024kilobyte](https://1024kilob
 - 2 MAX31865 breakout boards
 - 2 PT100 RTD elements
 - a SSR-25DA relay
-- a generic [relay module board] (https://www.aliexpress.us/item/2251832463344334.html?spm=a2g0o.order_list.0.0.4cb41802ARtZmn&gatewayAdapt=glo2usa&_randl_shipto=US)
+- a generic [relay module board](https://www.aliexpress.us/item/2251832463344334.html?spm=a2g0o.order_list.0.0.4cb41802ARtZmn&gatewayAdapt=glo2usa&_randl_shipto=US)
 - a 3,3 V power supply
 
 The MAX31865 is connected via SPI to the ESP8266, the pinout is defined in the header of the arduino file. You can also set the relay pin there.
