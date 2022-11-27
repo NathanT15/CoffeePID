@@ -2,22 +2,13 @@
 
 An ESP8266 / Arduino based "PID" controller for your coffee machine controlled via a web interface. 
 
-![CoffeePID Homescreen](images/CoffeePID_Homescreen.png)
-
-Besides a really precise temperature control CoffeePID adds software based overheating protection and a standby mode (currently activated after 30 minutes uptime).
 
 ## Overview
 
-There are already a lot of similar projects out there, but the main difference(s) of CoffeePID are:
-- the PT1000 thermo element to measure the temperature (more precise than a type k thermocouple)
-- the complete invisi- and reversible build, controlled by a web interface
-
-I wrote a whole blog series about this project. If you want to learn more about the details regarding components and software, you may want to take a look:
-- [project idea and hardware choice](https://1024kilobyte.com/blog/2020/3/3/new-project-coffeepid-a-generic-pid-controller-for-coffee-machines)
-- [writing the arduino code](https://1024kilobyte.com/blog/2020/3/3/coffeepid-the-software)
-- [creating the web interface](https://1024kilobyte.com/blog/2020/8/2/coffeepid-the-web-interface)
-- [putting everything together](https://1024kilobyte.com/blog/2020/7/22/coffeepid-the-build)
-- optimizing the project (work in progress)
+This project builds on the CoffeePID project by [1024kilobyte](https://1024kilobyte.com). It fully automates a traditaional heat exchanger espresso machine by 
+-controlling the boiler via PID and a realay 
+-measuring flowrate of coffee with a scale 
+-controling the group head solinoid valve via a realy
 
 ## Hardware Setup
 
